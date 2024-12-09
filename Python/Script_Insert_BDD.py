@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 import os
 
 # Chargement des variables d'environnement depuis le fichier .env
-load_dotenv()
+load_dotenv(overide=True) 
 
 # Récupération des informations de connexion à partir des variables d'environnement
 db_user = os.getenv('DB_USER')
